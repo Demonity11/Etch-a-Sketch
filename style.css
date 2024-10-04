@@ -16,3 +16,18 @@
 .square:hover {
     background-color: rgb(89, 83, 83);
 }
+
+#newGrid {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    background-color: black;
+    border: 2px solid gray;
+}
+
+#newGrid:hover {
+    background-color: rgb(89, 83, 83);
+}

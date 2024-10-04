@@ -8,12 +8,21 @@ function createSquares(event) {
             square.remove();
         });
 
-        let squaresX = parseInt(prompt("Type the number of the horizontal squares: "));
-        let squaresY = parseInt(prompt("Type the number of the vertical squares: "));
-        numberOfSquares = squaresX * squaresY;
+        let squaresX = 0;
+        let squaresY = 0;
+
+        do {
+            squaresX = parseInt(prompt("Type the number of the horizontal squares: "));
+            squaresY = parseInt(prompt("Type the number of the vertical squares: "));
+
+            if (squaresX > 100 || squaresY > 100) alert("You cannot asign values over 100.");
+
+        } while (squaresX > 100 || squaresY > 100)
 
         container.style.width = `${squaresX * 44}px`;
         container.style.height = `${squaresY * 44}px`;
+
+        numberOfSquares = squaresX * squaresY;
     }
 
     for (let i = 1; i <= numberOfSquares; i++) {
