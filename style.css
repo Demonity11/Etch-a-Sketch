@@ -6,15 +6,11 @@
 }
 
 .square {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     height: 40px;
     width: 40px;
     background-color: black;
-    border: 2px solid gray;
-}
-
-.square:hover {
-    background-color: rgb(89, 83, 83);
+    border: 1px solid gray;
 }
 
 #newGrid {
